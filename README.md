@@ -1,4 +1,5 @@
 # Online-Compiler-Web-Based-API 
+•	The main objective of this compiler is to facilitate any user such that programs of respective language can be compiled and run without downloading any IDE (Integrated Development Environment) or compiler.
 Run wamp and Open ide/ui/guest.html 
 Install all the 5 languages in your environment to run them.
 Download MinGW for C, C++.
