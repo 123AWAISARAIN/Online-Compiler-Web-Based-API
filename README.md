@@ -10,12 +10,22 @@ Replace Python's, Php paths withyour path in "ompiler.php"file in "app" folder.
 
 And for testing database,
 create a database named as registration,
-create following table in registration database:
+create following tables in registration database:
 CREATE TABLE `users` (
     `username` varchar(100) NOT NULL,
     `email` varchar(100) NOT NULL,
     `password` varchar(100) NOT NULL,
  PRIMARY KEY (`username`) 
 )
-Enjoy coding.
+CREATE TABLE saveCode (
+    codeID int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `username` varchar(100) NOT NULL,
+    code LARGETEXT NOT NULL,
+    FOREIGN KEY(username) REFERENCES users(username)
+);
+ALTER TABLE savecode
+ADD language varchar(10);
+
+
+Enjoy coding!
 
